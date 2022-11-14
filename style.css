@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dfcbbd;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+}
+
+.cup {
+    background-color: rgb(24, 27, 29);
+    height: 170px;
+    width: 200px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    border-radius: 30px 30px 85px 85px;
+}
+
+.cup:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background-color: #ffff;
+    margin: auto;
+    top: 110px;
+    left: 78px;
+    border-radius: 0 0 22.5px 22.5px;
+}
+
+.cup:after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    width: 14px;
+    height: 14px;
+    background-color: #ffff;
+    border-radius: 50%;
+    top: 80px;
+    left: 70px;
+    box-shadow: 40px 0 #ffff;
+}
+
+.coffee {
+    background-color: rgb(68, 41, 18);
+    height: 55px;
+    width: 197px;
+    top: -11px;
+    position: absolute;
+    border: 10px solid #ffff;
+    border-radius: 250% 250% 250% 250%;
+}
+
+.coffee:before {
+    content: "";
+    position: absolute;
+    background-color: rgba(167, 137, 111, 0.178);
+    height: 20px;
+    width: 150px;
+    border-radius: 250% 250% 250% 250%;
+    left: 15px;
+    top: 7px;
+}
+
+.cup-right {
+    position: absolute;
+    width: 75px;
+    height: 90px;
+    border: 20px solid rgb(24, 27, 29);
+    left: 170px;
+    top: 35px;
+    border-radius: 20px 20px 50%;
+}
+
+.cup-shadow {
+    position: absolute;
+    margin: auto;
+    width: 200px;
+    height: 20px;
+    background-color: rgba(54, 68, 68, 0.219);
+    left: 100px;
+    top: 310px;
+    border-radius: 80%;
+}
+
+.fa-heart {
+    color: #e13b3b;
+    font-size: 20px;
+    position: absolute;
+    left: 170px;
+    top: 150px;
+    animation: heartbeat 5s infinite;
+}
+
+@keyframes heartbeat {
+
+    100% {
+        font-size: 50px;
+        transform: translateY(-160px);
+    }
+}
+
+.text {
+    font-family: 'Rubik Bubbles', cursive;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    color: #e13b3b;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 390px;
+}
+
+footer a {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+a:hover{
+    background-color: #e13b3b;
+}
+a{
+    background-color: #ffffff;
+}
